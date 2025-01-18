@@ -20,6 +20,8 @@ function agregarAmigo() {
   arrayAmigos.push(amigoInput.value);
   //Agregar a lista
   actualizarLista();
+  //limpiar input
+  amigoInput.value = "";
 }
 
 // Actualizar lista
@@ -43,4 +45,6 @@ function sortearAmigo() {
   listaAmigos.innerHTML = "";
   // Agregar ganador
   resultado.innerHTML = ganador;
+  // Elimina contenido array
+  arrayAmigos.length = 0;
 }
